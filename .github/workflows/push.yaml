@@ -2,7 +2,7 @@ name: 'Push images'
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - 'guestbook/**'
 
@@ -19,6 +19,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_PASS }}
-          repository: sebkhedim/guestbook
+          repository: M-D_solution_cloud/guestbook
           tag_with_sha: true
           dockerfile: guestbook/Dockerfile
