@@ -41,11 +41,11 @@ jobs:
         uses: azure/setup-kubectl@v2.0
         
       - name: Deploy the application
-        run: kubectl create deployment guestbook-khedim --image=sebkhedim/guestbook:$GITHUB_SHA
+        run: kubectl create deployment guestbook-ulysse --image=UlysseDoby/guestbook:$GITHUB_SHA
         continue-on-error: true
 
       - name: Deploy application
-        run: kubectl set image deployment/guestbook-khedim guestbook=sebkhedim/guestbook:$GITHUB_SHA
+        run: kubectl set image deployment/guestbook-ulysse guestbook=UlysseDoby/guestbook:$GITHUB_SHA
 
       - name: apply all K8S YAML
         run: kubectl apply -f ./deploy
