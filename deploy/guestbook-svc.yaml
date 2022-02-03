@@ -13,6 +13,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: guestbook-khedim
+            name: guestbook-ulysse
             port:
               number: 80
