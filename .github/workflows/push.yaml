@@ -20,7 +20,7 @@ jobs:
 
 
       - name: Build Docker image
-        run: docker build . --file Dockerfile --tag jeroval/guestbook:$GITHUB_SHA
+        run: docker build . --file Dockerfile --tag UlysseDoby/guestbook:$GITHUB_SHA
         working-directory: ./guestbook
 
       - name: Push Docker image
