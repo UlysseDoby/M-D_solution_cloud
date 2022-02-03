@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: guestbook-ulyssedoby
+  name: guestbook-ulysse
   labels:
     app: guestbook
 spec:
@@ -16,11 +16,11 @@ spec:
     spec:
       containers:
       - name: guestbook
-        image: ulyssedoby/guestbook
+        image: UlysseDoby/guestbook
         resources:
           requests:
             cpu: 100m
             memory: 100Mi
         ports:
         - name: http
-         containerPort: 3000
+          containerPort: 3000
